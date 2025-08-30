@@ -6,12 +6,12 @@ public class Guess {
 
 
     public static void main(String[] args) {
-        var g = new Game(5);
+        var g = new Game();
 
 
     }
 
-    static class Game {
+     static class Game {
         int secretNum;
         int numGuesses;
         int guess;

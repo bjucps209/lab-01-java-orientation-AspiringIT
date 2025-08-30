@@ -2,6 +2,8 @@ package app;
 
 import org.junit.jupiter.api.Test;
 
+import java.nio.file.Files;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class GraderTest {
@@ -16,7 +18,7 @@ class GraderTest {
     void testRoundGrade() {
         int grade = 88;
         int result = Grader.roundGrade(grade);
-        assertEquals(90, result, "Grade of 87 SHOULD round up to 90 as it the next multiple of 5 is less than 3")
+        assertEquals(90, result, "Grade of 87 SHOULD round up to 90 as it the next multiple of 5 is less than 3");
     }
 
     @Test
@@ -25,6 +27,11 @@ class GraderTest {
         int result = Grader.NoRoundGrade(grade);
         assertEquals(76, result, "Grade of 76 SHOULD NOT round as it is more than 3 from a multiple of 5");
     }
+
+    /*@Test
+    void ValidFile() {
+        var fileName = "grades.txt";
+        assertEquals(fileName, );    }*/
 
 }
 
