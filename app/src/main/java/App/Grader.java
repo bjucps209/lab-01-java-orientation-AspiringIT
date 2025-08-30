@@ -33,15 +33,7 @@ public class Grader {
         }
     }
 
-  /*  public static int NoRoundGrade(int grade) {
-        //This stores the remainder of grade divided by 5 e.g. 39 remainder =4
-        int remainder = grade % 5;
-        if (grade < 40 || remainder >= 3 )
-            System.out.println();
-        else roundGrade(grade);
 
-        return remainder;
-    }*/
 
     public static int roundGrade(int grade) {
         int remainder = grade % 5;
