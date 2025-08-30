@@ -37,11 +37,11 @@ public class Grader {
 
     public static int roundGrade(int grade) {
         int remainder = grade % 5;
-        if (remainder >= 3 && grade >40) {
+        if (remainder >= 3 && grade >= 38) {
             grade += 5 - remainder;
             System.out.println(grade);
         }
-        else if (grade < 40){
+        else if (grade < 38){
             System.out.println(grade);
 
         }

@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class GraderTest {
     @Test
     void testFailGrade() {
-        int grade = 38;
+        int grade = 37;
         int result = Grader.roundGrade(grade);
-        assertEquals(38, result, "Grade of 38 should NOT round up to 40 as it is a failing score");
+        assertEquals(37, result, "Grade of 37 should NOT round up to 40 as it is a failing score");
     }
 
     @Test
